@@ -3,8 +3,10 @@
 
 const names=require("./names")
 const sayHi=require("./utils")
-console.log(names)
+const data = require("./alternative-export")
 
 sayHi("James")
 sayHi(names.Moh)
 sayHi(names.babe)
+
+console.log(data)
