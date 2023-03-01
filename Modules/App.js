@@ -4,6 +4,7 @@
 const names=require("./names")
 const sayHi=require("./utils")
 const data = require("./alternative-export")
+require("./function")
 
 sayHi("James")
 sayHi(names.Moh)
