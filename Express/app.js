@@ -4,6 +4,8 @@ const path= require("path")
 
 const app = express()
 
+// setup static and middleware - all html and css should be kept in a "public" folder
+app.use(express.static("./public"))
 
 app.get("/", (req, res) => {
     res.status(404).send("<h1>Home page</h1>")
