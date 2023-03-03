@@ -1,5 +1,9 @@
 const express = require("express")
+
+const path= require("path")
+
 const app = express()
+
 
 app.get("/", (req, res) => {
     res.status(404).send("<h1>Home page</h1>")
@@ -7,6 +11,10 @@ app.get("/", (req, res) => {
 
 app.get("/about",(req,res)=>{
     res.send("<h1>About page</h1>")
+})
+
+app.get("/contact",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"./contact.html"))
 })
 
 app.all("*",(req,res)=>{
