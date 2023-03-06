@@ -19,6 +19,10 @@ app.get("/contact",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"./contact.html"))
 })
 
+app.get("/services",(req,res)=>{
+    res.send("This is the services page")
+})
+
 app.all("*",(req,res)=>{
     res.send("<h1>Resource not found</h1>")
 })
