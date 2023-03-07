@@ -23,6 +23,10 @@ app.get("/services",(req,res)=>{
     res.send("This is the services page")
 })
 
+app.get("/contacts",(req,res)=>{
+    res.send("<h1>This is the contacts page</h1>")
+})
+
 app.all("*",(req,res)=>{
     res.send("<h1>Resource not found</h1>")
 })
