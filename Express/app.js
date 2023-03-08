@@ -27,6 +27,10 @@ app.get("/contacts",(req,res)=>{
     res.send("<h1>This is the contacts page</h1>")
 })
 
+app.get("/portfolio",(req,res)=>{
+    res.send("<h1>This is the portfolio page</h1>")
+})
+
 app.all("*",(req,res)=>{
     res.send("<h1>Resource not found</h1>")
 })
